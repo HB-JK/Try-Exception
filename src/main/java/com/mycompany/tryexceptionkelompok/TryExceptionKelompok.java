@@ -11,7 +11,7 @@ package com.mycompany.tryexceptionkelompok;
 public class TryExceptionKelompok {
 
     public static void main(String[] args) {
-        new TryExceptionKelompok().showFileSingleCatch();
+        new TryExceptionKelompok().showFileMultipleCatch();
     }
     
     public void buyItem(){
@@ -22,5 +22,10 @@ public class TryExceptionKelompok {
     public void showFileSingleCatch(){
         CheckFileSingleCatch checkFile = new CheckFileSingleCatch();
         checkFile.bacaFIle("CobaCari.pdf");
+    }
+    
+    public void showFileMultipleCatch(){
+        CheckFileMultipleCatch checkFile = new CheckFileMultipleCatch();
+        checkFile.bacaFile();
     }
 }
